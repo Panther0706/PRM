@@ -1,0 +1,6 @@
+{
+  "parent": "prm:item/netherite_bow",
+  "textures": {
+    "layer0": "prm:item/netherite_bow_pulling_1"
+  }
+}

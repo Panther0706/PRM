@@ -1,0 +1,6 @@
+{
+  "parent": "prm:item/gold_bow",
+  "textures": {
+    "layer0": "prm:item/gold_bow_pulling_2"
+  }
+}
