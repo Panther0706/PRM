@@ -1,4 +1,4 @@
-package net.panther0706.prm.items.bows;
+package net.panther0706.prm.items;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;

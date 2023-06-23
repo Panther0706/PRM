@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.panther0706.prm.items.bows.*;
+import net.panther0706.prm.items.*;
 import net.panther0706.prm.tabs.PRMCreativeTabs;
 import org.slf4j.Logger;
 

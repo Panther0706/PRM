@@ -1,13 +1,13 @@
-package net.panther0706.prm.items.bows;
+package net.panther0706.prm.items;
 
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 
-public class PRMDiamondBowProperties {
+public class PRMStoneBowProperties {
     public static void addBowProperties() {
 
-        makeBow(PRMBows.DIAMOND_BOW.get());
+        makeBow(PRMBows.STONE_BOW.get());
     }
 
     public static void makeBow(Item bow) {
@@ -16,7 +16,7 @@ public class PRMDiamondBowProperties {
                 return 0.0f;
             } else {
                 return p_174678_.getUseItem() != p_174676_ ? 0.0f : (float)(p_174676_.getUseDuration()
-                        - p_174678_.getUseItemRemainingTicks()) / 25.0f;
+                        - p_174678_.getUseItemRemainingTicks()) / 22.5f;
             }
         }));
         ItemProperties.register(bow, new ResourceLocation("pulling"), (p_174676_, p_174677_, p_174678_, p_174679_) -> {

@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "prm:gold_bow"
+    ]
+  },
+  "criteria": {
+    "has_gold_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "item": "minecraft:gold_ingot"
+        }]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_ingot"
+    ]
+  ]
+}

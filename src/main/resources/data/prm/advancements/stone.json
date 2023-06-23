@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "prm:stone_bow"
+    ]
+  },
+  "criteria": {
+    "has_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "item": "minecraft:cobblestone"
+        }]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_stone"
+    ]
+  ]
+}

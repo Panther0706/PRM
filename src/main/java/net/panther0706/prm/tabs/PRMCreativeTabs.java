@@ -7,7 +7,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.panther0706.prm.PRM;
-import net.panther0706.prm.items.bows.PRMBows;
+import net.panther0706.prm.items.PRMBows;
 
 public class PRMCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> TABS =

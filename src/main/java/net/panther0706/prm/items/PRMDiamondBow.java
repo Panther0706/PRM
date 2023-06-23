@@ -1,4 +1,4 @@
-package net.panther0706.prm.items.bows;
+package net.panther0706.prm.items;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -15,13 +15,13 @@ import net.minecraft.world.level.Level;
 
 import java.util.function.Predicate;
 
-public class PRMGoldBow extends BowItem {
+public class PRMDiamondBow extends BowItem {
     public static final int MAX_DRAW_DURATION = 71950;
     public static final float DEFAULT_RANGE = 3f;
-    public static final float DAMAGE_MULT = 3f;
-    public static final float INNACURACY_MULT = 0.5f;
+    public static final float DAMAGE_MULT = 3.5f;
+    public static final float INNACURACY_MULT = 0f;
 
-    public PRMGoldBow(Properties p_40660_) {
+    public PRMDiamondBow(Properties p_40660_) {
         super(p_40660_);
     }
 
@@ -30,7 +30,7 @@ public class PRMGoldBow extends BowItem {
             boolean flag = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, p_40667_) > 0;
             ItemStack itemstack = player.getProjectile(p_40667_);
 
-            int i = MAX_DRAW_DURATION - p_40670_;
+            int i = this.getUseDuration(p_40667_) - p_40670_;
             i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(p_40667_, p_40668_, player, i, !itemstack.isEmpty() || flag);
             if (i < 0) return;
 
@@ -90,7 +90,7 @@ public class PRMGoldBow extends BowItem {
     }
 
     public static float getPowerForTime(int p_40662_) {
-        float f = (float)p_40662_ / 15.0f;
+        float f = (float)p_40662_ / 25.0f;
         f = (f * f + f * 2.0F) / 3.0F;
         if (f > 1.0F) {
             f = 1.0F;
